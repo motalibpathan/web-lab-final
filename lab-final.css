@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.title {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+main {
+  border: 2px solid red;
+  width: 92%;
+  margin: 2%;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+.menu-container {
+  width: 100%;
+  display: flex;
+  justify-items: center;
+  margin-bottom: 100px;
+}
+.menu {
+  border: 2px solid black;
+  background-color: gray;
+  width: 30%;
+  margin: 2%;
+}
+.title-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.menu-title {
+  text-align: center;
+  padding: 5px;
+  border: 2px solid black;
+  border-top: 0;
+  border-right: 0;
+  width: 200px;
+}
+
+.title-1 {
+  background-color: lightcoral;
+}
+.title-2 {
+  background-color: #c14543;
+  color: white;
+}
+.title-3 {
+  background-color: #e5d099;
+}
+
+.menu-description {
+  padding: 10px;
+}
+
+@media only screen and (max-width: 960px) {
+  /* For tablets: */
+  .menu-container {
+    flex-wrap: wrap;
+  }
+  .menu-1,
+  .menu-2 {
+    width: 45%;
+  }
+  #sushi {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .menu-container {
+    flex-wrap: wrap;
+  }
+  .menu {
+    width: 100%;
+  }
+}
